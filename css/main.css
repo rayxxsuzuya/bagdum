@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'BackToBlack';
+  src: url(../fonts/BacktoBlackDemo.ttf);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Vidaloka", serif;
+  font-size: 1rem;
+}
+
+.header {
+  background: #000 url(../../img/header-bg.jpg) no-repeat center/cover;
+  height: 100vh;
+  padding-top: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@supports (-webkit-appearance: none) {
+  .header .banner {
+    background-image: url(/img/bannerbg.webp);
+  }
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.header__links {
+  list-style-type: none;
+}
+
+.header__link {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0 0 48px 0;
+  color: #fff !important;
+  text-decoration: none !important;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header__link:hover {
+  color: #ffeb3b !important;
+  border-bottom: 1px solid #ffeb3b;
+}
+
+.header__btn {
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-left: 1px solid #fff;
+  padding-left: 23px;
+}
+
+.header__btn:focus {
+  outline: none;
+}
+
+.header__search {
+  width: 15px;
+  height: 15px;
+}
+
+.header .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__text {
+  font-weight: 400;
+  font-family: "BacktoBlack";
+  color: #fff;
+}
+
+.header__suptitle {
+  font-size: 110px;
+}
+
+.header__title {
+  font-size: 280px;
+  line-height: 280px;
+}
+
+.nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 33px;
+}
+
+:-ms-fullscreen,
+:root .header {
+  display: block;
+}
+
+:-ms-fullscreen,
+:root .header .main {
+  padding: 15% 0;
+}
