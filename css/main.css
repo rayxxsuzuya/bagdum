@@ -33,8 +33,89 @@ body {
   font-size: 1rem;
 }
 
+.desIcon-1 {
+  width: 40px;
+  height: 40px;
+  fill: #cccccc;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.desIcon-1:hover {
+  fill: #ffeb3b;
+}
+
+.desIcon-2 {
+  width: 36px;
+  height: 36px;
+  fill: #cccccc;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.desIcon-2:hover {
+  fill: #ffeb3b;
+}
+
+.desIcon-3 {
+  width: 34px;
+  height: 34px;
+  fill: #cccccc;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.desIcon-3:hover {
+  fill: #ffeb3b;
+}
+
+.desIcon-4 {
+  width: 40px;
+  height: 40px;
+  fill: #cccccc;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.desIcon-4:hover {
+  fill: #ffeb3b;
+}
+
+.desIcon-5 {
+  width: 43px;
+  height: 43px;
+  fill: #cccccc;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.desIcon-5:hover {
+  fill: #ffeb3b;
+}
+
+.desIcon-6 {
+  width: 40px;
+  height: 40px;
+  fill: #cccccc;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.desIcon-6:hover {
+  fill: #ffeb3b;
+}
+
 .header {
-  background: #000 url(../../img/header-bg.jpg) no-repeat center/cover;
+  background: #000 url(../img/header-bg.jpg) no-repeat center/cover;
   height: 100vh;
   padding-top: 58px;
   display: -webkit-box;
@@ -43,8 +124,8 @@ body {
 }
 
 @supports (-webkit-appearance: none) {
-  .header .banner {
-    background-image: url(/img/bannerbg.webp);
+  .header .header {
+    background: #000 url(../img/header-bg.jpg) no-repeat center/cover;
   }
 }
 
@@ -148,4 +229,73 @@ body {
 :-ms-fullscreen,
 :root .header .main {
   padding: 15% 0;
+}
+
+.description {
+  padding-top: 109px;
+  padding-bottom: 66px;
+}
+
+.description__title {
+  color: #333333;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  margin-bottom: 155px;
+}
+
+.description__span {
+  color: #ffeb3b;
+  text-decoration: underline;
+}
+
+.desBlock .desItem {
+  margin-bottom: 101px;
+}
+
+.desBlock .desItem .desText {
+  padding-left: 30px;
+  border-left: 1px solid #f1f1f1;
+  margin-left: 30px;
+}
+
+.desBlock .desItem .desText .desTitle {
+  color: #313131;
+  font-family: "Vidaloka", serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  margin-bottom: 30px;
+}
+
+.desBlock .desItem .desText .desSubtitle {
+  color: #969595;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.52px;
+  margin-bottom: -4px;
+}
+
+.desItem:hover .desIcon-1 {
+  fill: #ffeb3b;
+}
+
+.desItem:hover .desIcon-2 {
+  fill: #ffeb3b;
+}
+
+.desItem:hover .desIcon-3 {
+  fill: #ffeb3b;
+}
+
+.desItem:hover .desIcon-4 {
+  fill: #ffeb3b;
+}
+
+.desItem:hover .desIcon-5 {
+  fill: #ffeb3b;
+}
+
+.desItem:hover .desIcon-6 {
+  fill: #ffeb3b;
 }
