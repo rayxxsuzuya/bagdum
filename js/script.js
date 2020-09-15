@@ -92,3 +92,36 @@ if (animItems.length > 0) {
 
 	animOnScroll();
 }
+
+let stats = document.querySelectorAll('.stats__number');
+
+function controle(elem, time) {
+	let i = 0;
+	let start = setInterval(move, 0);
+	function move() {
+	  if (i >= time) {
+		clearInterval(start);
+	  } else {
+		i++;
+		elem.textContent = i;
+	  }
+	}
+}
+  
+let countOfUse = 0;
+
+window.addEventListener('scroll', function(){
+	if(window.pageYOffset >= document.querySelector('.stats').offsetTop - 500) {
+		countOfUse++;
+
+		if (countOfUse >= 2) {
+			return;
+		} else {
+		controle(stats[0], 345);	
+		controle(stats[1], 983);	
+		controle(stats[2], 478);	
+		controle(stats[3], 48);	
+		}
+	}
+});
+
